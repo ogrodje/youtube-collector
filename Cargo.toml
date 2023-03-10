@@ -1,0 +1,16 @@
+[package]
+name = "youtube-collector"
+version = "0.0.1"
+edition = "2021"
+authors = ["Oto Brglez <otobrglez@gmail.com>"]
+description = "A library to extracttion of statistics from YouTube channels and videos."
+license = "MIT"
+homepage = "https://github.com/otobrglez/youtube-collector"
+repository = "https://github.com/otobrglez/youtube-collector"
+
+[features]
+# default = ["experimental"]
+
+[dependencies]
+scraper = "0.15.0"
+ureq = { version = "2.6.2", features = ["json", "cookies"] }
