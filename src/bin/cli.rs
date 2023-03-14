@@ -1,20 +1,18 @@
 use std::time::Duration;
-
 use clap::{Parser, ValueEnum};
 use futures::StreamExt;
-
 use youtube_collector::printers::Printers;
 use youtube_collector::yt_client::{YTChannelID, YTClient, YTKey};
 
-#[derive(Copy, Clone, PartialEq, Eq, PartialOrd, Ord, ValueEnum, Debug)]
+#[derive(Copy, Clone, ValueEnum, Debug)]
 pub enum Format { String, Json, CSV }
 
 #[derive(Parser, Debug)]
 #[command(author, version, about)]
 struct Args {
-    #[arg(long, value_name = "YouTube Data API Key")]   yt_key: YTKey,
-    #[arg(long, value_name = "YouTube Channel ID")]     yt_channel: YTChannelID,
-    #[arg(short, long, value_enum, default_value_t = Format::String)] format: Format,
+    #[arg(long, value_name = "YouTube Data API Key")]                   yt_key: YTKey,
+    #[arg(long, value_name = "YouTube Channel ID")]                     yt_channel: YTChannelID,
+    #[arg(short, long, value_enum, default_value_t = Format::String)]   format: Format,
 }
 
 #[tokio::main]
