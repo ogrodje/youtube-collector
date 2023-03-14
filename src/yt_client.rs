@@ -59,23 +59,6 @@ pub struct VideoItem {
     pub snippet: Snippet,
 }
 
-/*
-impl Copy for VideoItem {}
-
-impl Clone for VideoItem {
-    fn clone(&self) -> Self {
-        *self
-    }
-}
-
-impl Copy for String {}
-impl Clone for String {
-    fn clone(&self) -> Self {
-        *self
-    }
-}
-*/
-
 #[derive(Deserialize, Serialize, Debug)]
 struct Item {
     kind: String,
