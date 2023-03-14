@@ -15,6 +15,7 @@ mkShell {
     pkgconfig
     rust-analyzer
     rust-toolchain
+    rustfmt
   ];
   RUST_BACKTRACE = "full";
   RUST_SRC_PATH = "${pkgs.rustPlatform.rustLibSrc}";
