@@ -35,6 +35,11 @@ cargo build --release && \
   ./target/release/cli --yt-key $YT_KEY --yt-channel $YT_CHANNEL_ID --format json
 ```
 
+## History
+
+This CLI Rust tool was build for the collection of metrics for the [Ogrodje Podcasts](https://podcasts.apple.com/si/podcast/ogrodje/id1623611047). 
+If you are looking for other similar tools, make sure you also check the [anchor-collector](https://github.com/otobrglez/anchor-collector).
+
 ### Social && <3
 [![GitHub stars](https://img.shields.io/github/stars/otobrglez/youtube-collector.svg?style=social&label=Star)](https://github.com/otobrglez/youtube-collector) 
 [![GitHub watchers](https://img.shields.io/github/watchers/otobrglez/youtube-collector.svg?style=social&label=Watch)](https://github.com/otobrglez/youtube-collector) 
