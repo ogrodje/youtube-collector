@@ -33,7 +33,7 @@ async fn main() {
             client.videos(video_id)
                 .expect("Failed fetching YouTube videos.")
                 .first()
-                .expect("Collection of videos is empy.")
+                .expect("Collection of videos is empty.")
                 .clone()
         });
 
